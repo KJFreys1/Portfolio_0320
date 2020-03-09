@@ -8,6 +8,11 @@ body {
     padding: 0;
 }
 
+.link-to-top {
+    text-decoration: none;
+    font-size: 20px;
+}
+
 #navBar {
     margin-top: -10px;
     padding: 0 10px;
@@ -78,13 +83,10 @@ body {
 
 #about {
     padding: 50px 80px 80px 80px;
-    /* position: absolute; */
     margin: auto -15px auto -15px;
     text-align: center;
     background-color: #003459;
     color: #FFFFFF;
-    left: 0;
-    right: 0;
 }
 
 .about-title {
@@ -99,8 +101,71 @@ body {
     padding: 50px 50px 0 50px;
 }
 
+#about .link-to-top {
+    color: #FFFFFF;
+}
+
+#about .link-to-top:hover {
+    color: #00A7E1;
+}
+
 /*      Projects        */
 
 #projects {
+    padding: 50px 80px 80px 80px;
+    margin: auto -15px auto -15px;
+    text-align: center;
+}
 
+.projects-title {
+    font-size: 60px;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #003459;
+}
+
+.projects-container {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.proj-single {
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #00171F;
+    color: #00A7E1;
+    border-radius: 10px;
+}
+
+.proj-title {
+    font-size: 25px;
+    margin-top: 270px;
+    transition: margin .5s, font-size .5s;
+}
+
+.proj-desc {
+    font-size: 20px;
+}
+
+.proj-single:hover .proj-title {
+    margin-top: 20px;
+    font-size: 40px
+}
+
+.proj-single:hover {
+    cursor: pointer;
+}
+
+#projects .link-to-top {
+    color: #003459;
+}
+
+#projects .link-to-top:hover {
+    color: #00A7E1;
 }
