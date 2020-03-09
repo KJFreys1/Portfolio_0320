@@ -73,6 +73,7 @@ body {
     background-color: #003459;
     text-decoration: none;
     color: #FFFFFF;
+    border-radius: 10px;
 }
 
 .intro-link:hover {
@@ -99,6 +100,7 @@ body {
 .about-message {
     font-size: 40px;
     padding: 50px 50px 0 50px;
+    margin-bottom: 80px;
 }
 
 #about .link-to-top {
@@ -129,12 +131,13 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .proj-single {
     margin: 20px;
     padding: 20px;
+    overflow: hidden;
     width: 200px;
     height: 300px;
     overflow: hidden;
@@ -151,11 +154,27 @@ body {
 
 .proj-desc {
     font-size: 20px;
+    transition: margin .5s;
+}
+
+.tech-list {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #00A7E1;
+}
+
+.tech-logo {
+    filter: contrast(200%);
+    margin: 0 10px;
 }
 
 .proj-single:hover .proj-title {
-    margin-top: 20px;
-    font-size: 40px
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.proj-single:hover .proj-desc {
+    margin: -20px auto 25px auto;
 }
 
 .proj-single:hover {
@@ -168,4 +187,37 @@ body {
 
 #projects .link-to-top:hover {
     color: #00A7E1;
+}
+
+/*      Skills      */
+
+#skills {
+    padding: 50px 80px 80px 80px;
+    margin: auto -15px auto -15px;
+    text-align: center;
+    background-color: #003459;
+    color: #FFFFFF;
+}
+
+.skills-title {
+    font-size: 60px;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin: 60px auto;
+    border-radius: 10px;
+    background-color: #00A7E1;
+}
+
+.skill-img {
+    height: 100px;
+    width: 100px;
+    margin: 15px;
 }
