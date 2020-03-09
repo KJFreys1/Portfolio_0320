@@ -84,7 +84,7 @@ body {
 
 #about {
     padding: 50px 80px 80px 80px;
-    margin: auto -15px auto -15px;
+    margin: auto -10px;
     text-align: center;
     background-color: #003459;
     color: #FFFFFF;
@@ -115,7 +115,6 @@ body {
 
 #projects {
     padding: 50px 80px 80px 80px;
-    margin: auto -15px auto -15px;
     text-align: center;
 }
 
@@ -193,7 +192,7 @@ body {
 
 #skills {
     padding: 50px 80px 80px 80px;
-    margin: auto -15px auto -15px;
+    margin: auto -10px;
     text-align: center;
     background-color: #003459;
     color: #FFFFFF;
@@ -220,4 +219,68 @@ body {
     height: 100px;
     width: 100px;
     margin: 15px;
+}
+
+#skills .link-to-top {
+    color: #FFFFFF;
+}
+
+#skills .link-to-top:hover {
+    color: #00A7E1;
+}
+
+/*      Contact     */
+
+#contact {
+    padding: 50px 80px 20px 80px;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 60px;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #003459;
+}
+
+.contact-info {
+    font-size: 30px;
+    padding: 0;
+    margin: 20px;
+}
+
+.my-email {
+    text-decoration: none;
+    color: #00A7E1;
+}
+
+.my-email:hover {
+    color: #007EA7;
+}
+
+.contact-logo {
+    height: 70px;
+    width: 70px;
+    margin: 10px 30px 50px 30px;
+}
+
+#contact .link-to-top {
+    color: #003459;
+}
+
+#contact .link-to-top:hover {
+    color: #00A7E1;
+}
+
+/*      Modals      */
+
+.modal {
+    background-color: #00171F;
+    height: 100%;
+    width: 100%;
+    color: #00A7E1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
