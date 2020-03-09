@@ -1,6 +1,7 @@
 body {
     color: #003459;
     background-color: #FFFFFF;
+    padding: 0;
 }
 
 #navBar {
@@ -25,7 +26,7 @@ body {
 .nav-single-item {
     list-style: none;
     display: inline;
-    margin: auto 10px;
+    margin: auto 0 auto 20px;
     font-size: 25px;
 }
 
@@ -41,19 +42,24 @@ body {
 /*      Introduction        */
 
 #intro {
+    padding: auto 50px;
     text-align: center;
-    margin-top: 50px;
+    margin: 150px auto 200px auto;
 }
 
 .intro-title {
-    font-size: 45px;
+    font-size: 60px;
 }
 
 .intro-action {
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .intro-link {
+    display: block;
+    margin: 50px auto;
+    font-size: 25px;
+    width: 150px;
     padding: 20px;
     background-color: #003459;
     text-decoration: none;
@@ -62,4 +68,29 @@ body {
 
 .intro-link:hover {
     background-color: #00A7E1;
+}
+
+/*      About       */
+
+#about {
+    padding: auto 50px;
+    position: absolute;
+    text-align: center;
+    background-color: #003459;
+    color: #FFFFFF;
+    left: 0;
+    right: 0;
+}
+
+.about-title {
+    font-size: 60px;
+    width: 90%;
+    margin: 50px auto;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.about-message {
+    font-size: 40px;
+    padding: 0 100px;
 }
