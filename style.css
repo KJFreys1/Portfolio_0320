@@ -1,3 +1,7 @@
+html, body {
+    width: 100%;
+}
+
 body {
     color: #003459;
     background-color: #FFFFFF;
@@ -8,7 +12,7 @@ body {
     margin-top: -10px;
     padding: 0 10px;
     display: grid;
-    grid-template-columns: 300px 1fr 450px;
+    grid-template-columns: 50vw 1fr 30vw;
 }
 
 .nav-name {
@@ -19,8 +23,9 @@ body {
 .nav-list-container {
     grid-column: 3;
     display: flex;
-    justify-content: center;
-    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
 }
 
 .nav-single-item {
@@ -42,7 +47,6 @@ body {
 /*      Introduction        */
 
 #intro {
-    padding: auto 50px;
     text-align: center;
     margin: 150px auto 200px auto;
 }
@@ -73,8 +77,9 @@ body {
 /*      About       */
 
 #about {
-    padding: auto 50px;
-    position: absolute;
+    padding: 50px 80px 80px 80px;
+    /* position: absolute; */
+    margin: auto -15px auto -15px;
     text-align: center;
     background-color: #003459;
     color: #FFFFFF;
@@ -84,13 +89,18 @@ body {
 
 .about-title {
     font-size: 60px;
-    width: 90%;
-    margin: 50px auto;
+    margin: auto;
     padding-bottom: 30px;
     border-bottom: 2px solid #FFFFFF;
 }
 
 .about-message {
     font-size: 40px;
-    padding: 0 100px;
+    padding: 50px 50px 0 50px;
+}
+
+/*      Projects        */
+
+#projects {
+
 }
