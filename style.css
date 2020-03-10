@@ -13,6 +13,12 @@ body {
     font-size: 20px;
 }
 
+@media (max-width: 700px) {
+    .link-to-top {
+        font-size: 18px;
+    }
+}
+
 /*      NavBar      */
 
 #navBar {
@@ -29,7 +35,7 @@ body {
 
 .nav-list-container {
     grid-column: 3;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
@@ -47,8 +53,49 @@ body {
     color: #003459;
 }
 
-.nav-link:hover {
-    color: #00A7E1;
+@media (min-width: 700px) {
+    .nav-list-container {
+        grid-column: 3;
+        display: flex;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .nav-link:hover {
+        color: #00A7E1;
+    }
+}
+
+@media (max-width: 700px) {
+    #navBar {
+        display: block;
+    }
+
+    .fa {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 25px;
+        color: #003459;
+    }
+
+    .nav-list-container {
+        display: none;
+        width: max-content;
+        padding: 0;
+        margin: auto;
+    }
+
+    .nav-single-item {
+        margin: auto 0 auto 10px;
+        font-size: 25px;
+    }
+
+    .nav-link:active {
+        color: #00A7E1;
+    }
 }
 
 /*      Introduction        */
@@ -78,13 +125,28 @@ body {
     border-radius: 10px;
 }
 
-.intro-link:hover {
-    background-color: #00A7E1;
+@media (min-width: 700px) {
+    .intro-link:hover {
+        background-color: #00A7E1;
+    }
 }
 
 @media (max-width: 700px) {
     #intro {
         margin: 50px auto 100px auto;
+        padding: 10px;
+    }
+
+    .intro-title {
+        font-size: 40px;
+    }
+
+    .intro-action {
+        font-size: 25px;
+    }
+
+    .intro-link:active {
+        background-color: #00A7E1;
     }
 }
 
@@ -107,7 +169,7 @@ body {
 
 .about-message {
     font-size: 40px;
-    padding: 50px 50px 0 50px;
+    padding: 50px 20px 0 20px;
     margin-bottom: 80px;
 }
 
@@ -115,8 +177,30 @@ body {
     color: #FFFFFF;
 }
 
-#about .link-to-top:hover {
-    color: #00A7E1;
+@media (min-width: 700px) {
+    #about .link-to-top:hover {
+        color: #00A7E1;
+    }
+}
+
+@media (max-width: 700px) {
+    #about {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .about-title {
+        font-size: 50px;
+    }
+
+    .about-message {
+        font-size: 25px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    #about .link-to-top:active {
+        color: #00A7E1;
+    }
 }
 
 /*      Projects        */
@@ -156,12 +240,37 @@ body {
 .proj-title {
     font-size: 25px;
     margin-top: 270px;
-    transition: margin .5s, font-size .5s;
 }
 
 .proj-desc {
     font-size: 20px;
-    transition: margin .5s;
+}
+
+@media (min-width: 700px) {
+    .proj-title {
+        transition: margin .5s, font-size .5s;
+    }
+
+    .proj-desc {
+        transition: margin .5s;
+    }
+
+    .proj-single:hover .proj-title {
+        margin-top: 0;
+        font-size: 40px;
+    }
+    
+    .proj-single:hover .proj-desc {
+        margin: -20px auto 25px auto;
+    }
+    
+    .proj-single:hover {
+        cursor: pointer;
+    }
+
+    #projects .link-to-top:hover {
+        color: #00A7E1;
+    }
 }
 
 .tech-list {
@@ -175,25 +284,42 @@ body {
     margin: 0 10px;
 }
 
-.proj-single:hover .proj-title {
-    margin-top: 0;
-    font-size: 40px;
-}
-
-.proj-single:hover .proj-desc {
-    margin: -20px auto 25px auto;
-}
-
-.proj-single:hover {
-    cursor: pointer;
-}
-
 #projects .link-to-top {
     color: #003459;
 }
 
-#projects .link-to-top:hover {
-    color: #00A7E1;
+@media (max-width: 700px) {
+    #projects {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .projects-title {
+        font-size: 50px;
+    }
+
+    .proj-single {
+        width: 250px;
+        height: 380px;
+    }
+
+    .proj-title {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    .proj-desc {
+        margin: -10px auto 30px auto;
+        font-size: 25px;
+    }
+
+    .tech-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    #projects .link-to-top:active {
+        color: #00A7E1;
+    }
 }
 
 /*      Skills      */
@@ -233,8 +359,34 @@ body {
     color: #FFFFFF;
 }
 
-#skills .link-to-top:hover {
-    color: #00A7E1;
+@media (min-width: 700px) {
+    #skills .link-to-top:hover {
+        color: #00A7E1;
+    }
+}
+
+@media (max-width: 700px) {
+    #skills {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .skills-title {
+        font-size: 50px;
+    }
+
+    .skills-list {
+        width: 85%;
+        margin: 50px auto 40px auto;
+    }
+
+    .skill-img {
+        height: 60px;
+        width: 60px;
+    }
+
+    #skills .link-to-top:active {
+        color: #00A7E1;
+    }
 }
 
 /*      Contact     */
@@ -262,10 +414,6 @@ body {
     color: #00A7E1;
 }
 
-.my-email:hover {
-    color: #007EA7;
-}
-
 .contact-logo {
     height: 70px;
     width: 70px;
@@ -276,8 +424,42 @@ body {
     color: #003459;
 }
 
-#contact .link-to-top:hover {
-    color: #00A7E1;
+@media (min-width: 700px) {
+    .my-email:hover {
+        color: #007EA7;
+    }
+
+    #contact .link-to-top:hover {
+        color: #00A7E1;
+    }
+}
+
+@media (max-width: 700px) {
+    #contact {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .contact-title {
+        font-size: 50px;
+    }
+
+    .contact-detail {
+        display: none;
+    }
+
+    .contact-logo {
+        height: 50px;
+        width: 50px;
+        margin: 15px 10px 40px 10px;
+    }
+
+    .my-email:active {
+        color: #007EA7;
+    }
+
+    #contact .link-to-top:active {
+        color: #00A7E1;
+    }
 }
 
 /*      Modals      */
@@ -372,4 +554,31 @@ body {
 .close-modal:hover {
     cursor: pointer;
     color: #00A7E1;
+}
+
+@media (max-width: 700px) {
+    .outer-modal {
+        padding: 0 20px;
+    }
+
+    .modal-left {
+        width: 100%;
+        float: none;
+    }
+
+    .modal-right {
+        display: none;
+    }
+
+    .modal-subtitle {
+        font-size: 40px;
+    }
+
+    .modal-desc {
+        margin-bottom: 40px;
+    }
+
+    .close-modal {
+        margin: auto;
+    }
 }

@@ -32,3 +32,13 @@ devSync.addEventListener("click", () => {
 thoughtShower.addEventListener("click", () => {
     modalThree.style.display = "block"
 })
+
+const nav = document.querySelector(".nav-list-container")
+
+function showNav() {
+    if (nav.style.display == "none") {
+        nav.style.display = "flex"
+    } else {
+        nav.style.display = "none"
+    }
+}
