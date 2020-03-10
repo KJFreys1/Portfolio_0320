@@ -34,6 +34,7 @@ thoughtShower.addEventListener("click", () => {
 })
 
 const nav = document.querySelector(".nav-list-container")
+nav.style.display = "flex"
 
 function showNav() {
     if (nav.style.display == "none") {

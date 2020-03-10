@@ -54,22 +54,6 @@ body {
     color: #003459;
 }
 
-@media (min-width: 700px) {
-    .nav-list-container {
-        grid-column: 3;
-        display: flex;
-        padding-right: 20px;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    .nav-link:hover {
-        color: #00A7E1;
-    }
-}
-
 @media (max-width: 700px) {
     #navBar {
         display: block;
@@ -101,6 +85,22 @@ body {
     }
 
     .nav-link:active {
+        color: #00A7E1;
+    }
+}
+
+@media (min-width: 700px) {
+    .nav-list-container {
+        grid-column: 3;
+        display: revert;
+        padding-right: 20px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .nav-link:hover {
         color: #00A7E1;
     }
 }
