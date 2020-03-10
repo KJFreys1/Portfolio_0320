@@ -1,11 +1,12 @@
 html, body {
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     color: #003459;
     background-color: #FFFFFF;
-    padding: 0;
     font-family: 'Sen', sans-serif;
 }
 
@@ -23,7 +24,7 @@ body {
 /*      NavBar      */
 
 #navBar {
-    margin: -10px -10px auto -10px;
+    margin-top: -10px;
     padding: 0 10px;
     display: grid;
     grid-template-columns: 50vw 1fr 30vw;
@@ -155,7 +156,7 @@ body {
 
 #about {
     padding: 50px 80px 80px 80px;
-    margin: auto -10px;
+    margin: auto;
     text-align: center;
     background-color: #003459;
     color: #FFFFFF;
@@ -208,7 +209,7 @@ body {
 
 #projects {
     padding: 50px 80px 80px 80px;
-    margin: auto -10px;
+    margin: auto;
     text-align: center;
 }
 
@@ -328,7 +329,7 @@ body {
 
 #skills {
     padding: 50px 80px 80px 80px;
-    margin: auto -10px;
+    margin: auto;
     text-align: center;
     background-color: #003459;
     color: #FFFFFF;
