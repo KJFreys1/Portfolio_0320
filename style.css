@@ -6,6 +6,7 @@ body {
     color: #003459;
     background-color: #FFFFFF;
     padding: 0;
+    font-family: 'Sen', sans-serif;
 }
 
 .link-to-top {
@@ -22,7 +23,7 @@ body {
 /*      NavBar      */
 
 #navBar {
-    margin-top: -10px;
+    margin: -10px -10px auto -10px;
     padding: 0 10px;
     display: grid;
     grid-template-columns: 50vw 1fr 30vw;
@@ -207,6 +208,7 @@ body {
 
 #projects {
     padding: 50px 80px 80px 80px;
+    margin: auto -10px;
     text-align: center;
 }
 
@@ -246,6 +248,10 @@ body {
     font-size: 20px;
 }
 
+.proj-single:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 700px) {
     .proj-title {
         transition: margin .5s, font-size .5s;
@@ -262,10 +268,6 @@ body {
     
     .proj-single:hover .proj-desc {
         margin: -20px auto 25px auto;
-    }
-    
-    .proj-single:hover {
-        cursor: pointer;
     }
 
     #projects .link-to-top:hover {
@@ -451,6 +453,10 @@ body {
         height: 50px;
         width: 50px;
         margin: 15px 10px 40px 10px;
+    }
+
+    .contact-info {
+        font-size: 24px;
     }
 
     .my-email:active {
