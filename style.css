@@ -110,6 +110,7 @@ body {
 #intro {
     text-align: center;
     margin: 150px auto 200px auto;
+    padding: 0 20px;
 }
 
 .intro-title {
