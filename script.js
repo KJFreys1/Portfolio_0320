@@ -34,11 +34,20 @@ thoughtShower.addEventListener("click", () => {
 })
 
 const nav = document.querySelector(".nav-list-container")
+const icon = document.querySelector(".icon")
 
-function showNav() {
-    if (nav.style.display == "none") {
-        nav.style.display = "flex"
-    } else {
-        nav.style.display = "none"
-    }
-}
+icon.addEventListener("click", () => {
+    nav.classList.toggle("nav-active")
+    nav.style.animation = "navLinkFade .5s ease forwards"
+    document.querySelector(".fa").classList.toggle("i-active")
+})
+
+// function showNav() {
+//     // if (nav.style.display == "none") {
+//     //     nav.style.display = "flex"
+//     // } else {
+//     //     nav.style.display = "none"
+//     // }
+//     console.log(nav.classList)
+//     nav.classList.toggle("nav-active")
+// }

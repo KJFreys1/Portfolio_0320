@@ -1,4 +1,7 @@
-@font-face {
+    html {
+    scroll-behavior: smooth;
+    }
+    @font-face {
     font-family : 'Sen';
     font-style : normal;
     font-weight : 400;
@@ -59,14 +62,20 @@
     top : 0;
     right : 0;
     margin : 15px;
+    transition: transform .5s ease;
+    }
+    .i-active {
+    transform: rotate(90deg);
     }
     i {
-    background-color : #003459;
+    background-color : white;
     padding : 10px;
-    color : #FFFFFF;
+    color : #003459;
+    }
+    .nav-active {
+    display: none;
     }
     .nav-list-container {
-    display : none;
     width : max-content;
     padding : 0;
     margin : auto;
@@ -78,6 +87,13 @@
     .nav-link:active {
     color : #00A7E1;
     }
+    }
+    @keyframes navLinkFade{
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
     }
     @media (min-width: 700px) {
     .nav-list-container {
