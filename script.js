@@ -41,13 +41,3 @@ icon.addEventListener("click", () => {
     nav.style.animation = "navLinkFade .5s ease forwards"
     document.querySelector(".fa").classList.toggle("i-active")
 })
-
-// function showNav() {
-//     // if (nav.style.display == "none") {
-//     //     nav.style.display = "flex"
-//     // } else {
-//     //     nav.style.display = "none"
-//     // }
-//     console.log(nav.classList)
-//     nav.classList.toggle("nav-active")
-// }
